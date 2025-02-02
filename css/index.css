@@ -1,0 +1,117 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base body styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+.header {
+    background: #3498db;
+    color: #fff;
+    padding: 1em 2em;
+}
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header h1 {
+    font-size: 1.8em;
+}
+.nav a {
+    margin-left: 1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.nav a:hover {
+    color: #e0e0e0;
+}
+
+/* Main landing content styling */
+.landing-content {
+    max-width: 800px;
+    background: #fff;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.intro {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.features {
+    margin-bottom: 2em;
+}
+.features h3 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+.features ul {
+    list-style: none;
+    padding-left: 0;
+}
+.features li {
+    margin-bottom: 0.5em;
+    padding-left: 1.2em;
+    position: relative;
+}
+.features li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+}
+
+/* Call-to-action styling */
+.call-to-action {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.call-to-action p {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: #2980b9;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    color: #777;
+    background: #eaeaea;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

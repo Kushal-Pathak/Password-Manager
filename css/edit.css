@@ -1,0 +1,118 @@
+/* Reset default styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base body styling */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling with navbar */
+.header {
+    background: #3498db;
+    color: #fff;
+    padding: 1em 2em;
+}
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 {
+    font-size: 1.8em;
+}
+.nav a {
+    margin-left: 1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.nav a:hover,
+.nav a.active {
+    color: #e0e0e0;
+}
+
+/* Main content area */
+.landing-content {
+    margin: 2em auto;
+    max-width: 600px;
+    padding: 0 1em;
+}
+
+/* Container styling */
+.container {
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+form input[type="text"],
+form input[type="password"] {
+    padding: 0.75em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+}
+
+/* Styling for the password wrapper */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+.password-wrapper input {
+    width: 100%;
+    padding-right: 2.5em;  /* Space for the icon */
+}
+.toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #3498db;
+    user-select: none;
+}
+
+/* Button styling */
+form button {
+    padding: 0.75em;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    background: #eaeaea;
+    color: #777;
+    margin-top: 2em;
+}

@@ -1,0 +1,140 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base body styling */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling with navbar */
+.header {
+    background: #3498db;
+    color: #fff;
+    padding: 1em 2em;
+}
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 {
+    font-size: 1.8em;
+}
+.nav a {
+    margin-left: 1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.nav a:hover,
+.nav a.active {
+    color: #e0e0e0;
+}
+
+/* Main content area */
+.landing-content {
+    margin: 2em auto;
+    max-width: 900px;
+    padding: 0 1em;
+}
+
+/* Container styling */
+.container {
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Section headings */
+.container h2,
+.container h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Form styling for Add New Entry */
+.add-entry form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+.add-entry input,
+.add-entry button {
+    padding: 0.75em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.add-entry button {
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.add-entry button:hover {
+    background-color: #2980b9;
+}
+
+/* Table styling for saved entries */
+.table-responsive {
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+table th,
+table td {
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+table th {
+    background-color: #f7f7f7;
+}
+
+/* Password wrapper styling (for both form and table) */
+.password-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.password-wrapper input {
+    border: none;
+    width: 100%;
+    padding-right: 2.5em;  /* Extra space for the toggle icon */
+}
+.toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.2em;
+    color: #3498db;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    background: #eaeaea;
+    color: #777;
+    margin-top: 2em;
+}
